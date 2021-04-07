@@ -5,9 +5,6 @@ import twint
 
 if __name__ == "__main__":
 
-    print("No args:", len(sys.argv))
-    print("Args:" + str(sys.argv))
-
     c = twint.Config()
 
     json_name = "out.json"  # default value
