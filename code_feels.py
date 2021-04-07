@@ -1,7 +1,7 @@
 import os
 import sys
-import twint
 
+import twint
 
 if __name__ == "__main__":
 
