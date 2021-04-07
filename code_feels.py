@@ -1,8 +1,7 @@
-
+import os
 import sys
 import twint
 
-# json
 
 if __name__ == "__main__":
 
@@ -10,6 +9,8 @@ if __name__ == "__main__":
     print("Args:" + str(sys.argv))
 
     c = twint.Config()
+
+    json_name = "out.json"  # default value
 
     for argument in sys.argv:
         if "hashtag=" in argument:
@@ -20,8 +21,15 @@ if __name__ == "__main__":
             c.Username = user
         if "term=" in argument:
             pass
+        if "json=" in argument:
+            _, json_name = argument.split("=", 1)
+
+    try:
+        os.remove(json_name)
+    except FileNotFoundError:
+        pass
 
     c.Store_json = True
-    c.Output = "out.json"
+    c.Output = json_name
     c.Limit = 20    # tweets to fetch, increments of 20
-    data = twint.run.Search(c)
+    twint.run.Search(c)
