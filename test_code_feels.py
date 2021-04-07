@@ -4,7 +4,6 @@ import unittest
 
 
 class MyTestCase(unittest.TestCase):
-
     def test_something(self):
 
         # TODO: assertEquals test.json with json_string
@@ -20,7 +19,9 @@ class MyTestCase(unittest.TestCase):
         """
         expected_dict = json.loads(json_string)
 
-        os.system('python3 code_feels.py hashtag=python user=onlytestinghere json=test.json')
+        os.system(
+            'python3 code_feels.py hashtag=python user=onlytestinghere json=test.json'
+        )
 
         with open("test.json") as json_file:
             actual_dict = json.load(json_file)

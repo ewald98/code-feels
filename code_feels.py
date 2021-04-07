@@ -31,5 +31,5 @@ if __name__ == "__main__":
 
     c.Store_json = True
     c.Output = json_name
-    c.Limit = 20    # tweets to fetch, increments of 20
+    c.Limit = 20  # tweets to fetch, increments of 20
     twint.run.Search(c)
