@@ -4,7 +4,7 @@ import unittest
 
 
 class MyTestCase(unittest.TestCase):
-    def test_something(self):
+    def test_code_feels(self):
 
         # TODO: assertEquals test.json with json_string
         json_string = """{"id": 1379122470595268616, "conversation_id": "1379122470595268616",
