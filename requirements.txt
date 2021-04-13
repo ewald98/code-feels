@@ -33,7 +33,6 @@ schedule==1.0.0
 six==1.15.0
 soupsieve==2.2.1
 tqdm==4.59.0
-twint==2.1.21
 typing-extensions==3.7.4.3
 urllib3==1.26.4
 yarl==1.6.3
