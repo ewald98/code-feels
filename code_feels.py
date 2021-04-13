@@ -17,7 +17,7 @@ if __name__ == "__main__":
             _, user = argument.split("=", 1)
             c.Username = user
         if "term=" in argument:
-            pass
+            _, term = argument.split("=", 1)
         if "json=" in argument:
             _, json_name = argument.split("=", 1)
 
