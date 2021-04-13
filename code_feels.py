@@ -18,6 +18,7 @@ if __name__ == "__main__":
             c.Username = user
         if "term=" in argument:
             _, term = argument.split("=", 1)
+            c.Search = term
         if "json=" in argument:
             _, json_name = argument.split("=", 1)
 
